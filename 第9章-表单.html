@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单测试</title>
+	</head>
+	<body>
+		<div>
+			<form>													<!--form标签：将所有表单标签放在其内部-->
+				<input type="text" value="这是一个单行文本框"/><br />
+				<textarea>这是一个多行文本框</textarea><br />
+				<select>
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JavaScript</option>
+				</select>
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				姓名：<input type="text"/>							<!--单行文本框-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				姓名：<input type="text"/><br />						<!--单行文本框属性-->
+				姓名：<input type="text" value="helicopter"/><br />	<!--value属性：设置默认值-->
+				姓名：<input type="text" size="20"/><br />			<!--size属性：设置长度-->
+				姓名：<input type="text" size="10"/><br />
+				姓名：<input type="text" maxlength="5"/>				<!--maxlength属性：最多可输入的字符-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				账号：<input type="text"/><br />
+				密码：<input type="password"/>						<!--密码文本框-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				账号：<input type="text" size="15" maxlength="10"/><br />
+				密码：<input type="password" size="15" maxlength="10"/>	<!--密码文本框属性-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				性别：
+				<input type="radio" name="gender" value="男"/>男		<!--单选框-->
+				<input type="radio" name="gender" value="女"/>女
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				性别：
+				<input type="radio" name="gender" value="男" checked />男	<!--checked属性（缩写）：默认选中该选项-->
+				<input type="radio" name="gender" value="女"/>女
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				性别：
+				<label><input type="radio" name="gender" value="男"/>男</label>	<!--语义化，借助label标签关联-->
+				<label><input type="radio" name="gender" value="女"/>女</label>
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				你喜欢的水果：<br />
+				<input type="checkbox" name="fruit" value="苹果"/>苹果		<!--复选框-->
+				<input type="checkbox" name="fruit" value="香蕉"/>香蕉
+				<input type="checkbox" name="fruit" value="西瓜"/>西瓜
+				<input type="checkbox" name="fruit" value="李子"/>李子
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<input type="button" value="表白"/>							<!--普通按钮-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<input type="button" value="普通按钮"/>
+				<input type="submit" value="提交按钮"/>						<!--提交按钮-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				账号：<input type="text" /><br />
+				密码：<input type="password" /><br />
+				<input type="reset" value="重置" />							<!--重置按钮-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<input type="file"/>										<!--文件上传-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				个人简介：<br />
+				<textarea rows="5" cols="20">请介绍一下自己</textarea>		<!--多行文本框-->
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<select>													<!--下拉列表-->
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>jQuery</option>
+					<option>JavaScript</option>
+					<option>Vue.js</option>
+				</select>
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<select multiple>											<!--multiple属性：设置下拉式列表，可以选择多选-->
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>jQuery</option>
+					<option>JavaScript</option>
+					<option>Vue.js</option>
+					<option>HTML5</option>
+					<option>CSS 3</option>
+				</select>
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<select size="5">											<!--size属性：显示几个列表项，Chrome浏览器最低是4个选项-->
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>jQuery</option>
+					<option>JavaScript</option>
+					<option>Vue.js</option>
+					<option>HTML5</option>
+					<option>CSS 3</option>
+				</select>
+			</form>
+		</div>
+		<br />
+		<div>
+			<form method="post">
+				<select size="5">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option selected>jQuery</option>						<!--selected属性：是否选中-->
+					<option>JavaScript</option>
+					<option>Vue.js</option>
+					<option>HTML5</option>
+					<option>CSS 3</option>
+				</select>
+			</form>
+		</div>
+	</body>
+</html>
